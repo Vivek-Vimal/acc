@@ -23,6 +23,8 @@ const Width = styled.div`
     @media only screen and (max-width: 1300px) {
         width: 98%;
     }
+
+
   
 `;
 
@@ -55,6 +57,12 @@ const Background = styled.div`
     
       padding: 3rem 2rem;
       position: relative;
+
+      @media only screen and (max-width: 998px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 `;
 
 const Dashboard = styled.div`
@@ -99,12 +107,38 @@ export const T = styled.p`
       }
 `;
 
+const Tm = styled.p`
+color: #FFF;
+font-weight: 500;
+font-size: 1rem;
+// margin-bottom: 2rem;
+text-align: left;
+ // font-weight: bold;
+  letter-spacing: 0.05rem;
+  line-height: 1.5;
+
+  @media only screen and (max-width: 998px) {
+    margin: 2rem 0;
+  }
+@media only screen and (max-width: 768px) {
+    font-weight: 510;
+    font-size: 1rem;
+    text-align: center;
+   
+  }
+`;
+
+
 const Flex = styled.div`
       display: flex;
       align-items: center;
       justify-content: space-between;
       width: 20rem;
       margin: 0 0 0.5rem 0;
+
+      @media only screen and (max-width: 1200px) {
+        width: 15rem;
+      }
 `
 
 const Page4 = (props) => {
@@ -137,9 +171,9 @@ const Page4 = (props) => {
             <Background>
               <img src={bg} alt='' style={{height:'8rem',width:'6rem'}} />
               <T style={{fontSize:'1.5rem',width:'10rem'}} >Power your Portfolio!</T>
-              <T style={{width:'20rem'}}>
+              <Tm style={{width:'20rem'}}>
               Access special management features like shareholder votes, dividends, and coupon payments for all your security tokens:
-              </T>
+              </Tm>
               <div>
                 <Flex>
                   <T>01</T>

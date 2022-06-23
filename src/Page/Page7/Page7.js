@@ -60,11 +60,11 @@ const IconContainer = styled.div`
 `
 
 const Left = styled(motion.div)`
-        width: 55%;
+        width: 45%;
      // background: red;
 
           @media only screen and (max-width: 1100px) {
-            width: 50%;
+            width: 70%;
         }
         @media only screen and (max-width: 998px) {
             width: 85%;
@@ -72,7 +72,7 @@ const Left = styled(motion.div)`
 
     @media only screen and (max-width: 768px) {
      
-        width: 85%;
+        width: 95%;
       
        
       }
@@ -82,14 +82,15 @@ const Right = styled(motion.div)`
         display: flex;
         //justify-content: center;
         flex-direction: column;
-        width: 40%;
+        width: 45%;
        // height: 45rem;
-
+       display: block;
 
           @media only screen and (max-width: 1100px) {
             width: 50%;
             margin: 3rem  0 0 0;
             height: auto;
+            display: none;
         }
         @media only screen and (max-width: 998px) {
             width: 65%;

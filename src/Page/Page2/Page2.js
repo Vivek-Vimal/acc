@@ -6,6 +6,8 @@ import bg from './bg.svg'
 import theme from "styled-theming";
 import left from './m1.png'
 import right from './m2.png'
+import mleft from './mm1.png'
+import mright from './mm2.png'
 import { motion } from 'framer-motion'
 import element from './element.png'
 import { Button } from '../../components/Navbar/Navbar';
@@ -76,6 +78,10 @@ export const H = styled.h1`
     font-weight: 500;
     margin: 0 2rem 0 0;
     text-align: left !important;
+
+    @media only screen and (max-width: 1100px) {
+      margin: 0 0 1.5rem 0;
+    }
     @media only screen and (max-width: 768px) {
         font-weight: 510;
         font-size: 1.2rem;
@@ -101,9 +107,11 @@ const Center = styled.div`
         width: 95%;
     }
     @media only screen and (max-width: 1100px) {
-       
-        padding: 3rem;
-        background-image: none;
+      padding: 3rem;
+      background-image: url(${mleft});
+      background-size: 5rem 5rem;
+      background-position: right top !important;
+      flex-direction: column;
     }
 
 `
@@ -126,7 +134,10 @@ const Center1 = styled.div`
     @media only screen and (max-width: 1100px) {
        
         padding: 3rem;
-        background-image: none;
+        background-image: url(${mright});
+        background-size: 5rem 5rem;
+        background-position: right top !important;
+        flex-direction: column;
     }
 
 `
@@ -136,6 +147,10 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    @media only screen and (max-width: 1100px) {
+       
+      justify-content: center;
+  }
 `
 const Container1 = styled.div`
   width: 100%;
@@ -143,6 +158,19 @@ const Container1 = styled.div`
   align-items: center;
   justify-content: flex-end;
   margin: 3rem 0 0 0;
+
+  @media only screen and (max-width: 1100px) {
+       
+    justify-content: center;
+}
+`
+
+const Margin = styled.div`
+    margin: 2rem 0 0 0;
+    @media only screen and (max-width: 1100px) {
+       
+      margin: 1rem 0 0 0;
+  }
 `
 
 const Page2 = () => {
@@ -151,15 +179,17 @@ const Page2 = () => {
         <Sec id="">
 
           <Width>
-
+            <div style={{width:'100%'}}>
+          <H style={{textAlign:'left',margin:'0 0 2rem 0.25rem'}} >Are you a...</H>
+          </div>
         <Container>
             <Center>
               <H>Financial Institution?</H>
               <T>
               If you’re looking for a way to streamline tokenized share selling, secondary trading, investor management, or report distribution, you can have it all in one place - the Cedent Platform. We will set up everything you need to manage tokenized assets daily.
-              <div style={{margin:'2rem 0 0 0'}}>
+              <Margin>
               We will give your team a dashboard to work with and specialized advice that will take care of the nuts and bolts of the tokenization process.
-              </div>
+              </Margin>
               </T>
               
             </Center>
@@ -171,9 +201,9 @@ const Page2 = () => {
               <H>Business?</H>
               <T>
               If you’re looking for a way to streamline tokenized share selling, secondary trading, investor management, or report distribution, you can have it all in one place - the Cedent Platform. We will set up everything you need to manage tokenized assets daily.
-              <div style={{margin:'2rem 0 0 0'}}>
+              <Margin>
 We will give your team a dashboard to work with and specialized advice that will take care of the nuts and bolts of the tokenization process.
-              </div>
+              </Margin>
               </T>
               
             </Center1>

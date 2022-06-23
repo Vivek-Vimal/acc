@@ -72,7 +72,7 @@ const Hs = styled(H)`
                    }}>{`${props.name ? props.name : "Save The Children Fund Save The Children"}`}</Ts>
                 <Ts style={{textAlign:"left", color:'rgba(0, 29, 35, 1)'}}>{`${props.details ? props.details : "Fundraising For The People And Causes "}`}</Ts>
                 <Hs style={{color:'rgba(133, 129, 129, 1)'}}>
-                    {`${props.site ? props.site : "Donor.org.uk"}`}
+                    {`${props.site ? props.site : "accredited.org.uk"}`}
                 </Hs>
                 <T style={{color:'rgba(133, 129, 129'}}>
                 {`${props.time ? props.time : "Last donation 3m ago"}`}

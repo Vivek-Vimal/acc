@@ -2,7 +2,7 @@ import React,{ useState } from 'react';
 import { bool } from 'prop-types';
 import { StyledMenu } from './Menu.styled';
 import styled from 'styled-components';
-import logo from './logo.png';
+import logo from '../../logo.svg';
 // import twitter from '../../../page/Footer/twitter.svg'
 // import opensea from '../../../page/Footer/opensea.svg'
 import { Link, animateScroll as scroll } from "react-scroll";
@@ -21,8 +21,8 @@ const Link1 = styled(Link)`
     color: #FFF;
     position: absolute;
     left: 2rem;
-    top: -0.3rem;
-    width: 3rem;
+    top: -0.75rem;
+
 `;
 
 const Right = styled.div`
@@ -42,7 +42,7 @@ const Flex = styled.div`
 `;
 
 const T = styled.p`
-    color: #FFF;
+    color: #000;
     font-weight: 500;
     font-size: 16px;
     margin-top: 1rem;
@@ -67,27 +67,27 @@ const Menu = ({ open, ...props }) => {
 
   return (
     <StyledMenu open={open}  aria-hidden={!isHidden} {...props}  >
-      <Link1 to="home" spy={true} smooth={true}><img src='/yellow.png' alt="Logo" style={{width:"5rem",height:"5rem"}}/></Link1>
+      <Link1 to="home" spy={true} smooth={true}><img src={logo} alt="Logo" style={{width:"8rem",height:"6rem"}}/></Link1>
 
       <MenuItems >
-        <a href="http://donor-vaults.s3-website-us-west-2.amazonaws.com/#/avax" style={{padding:"0"}} >
-           <H to="home" spy={true}  smooth={true}  >Vault</H> 
+        <a href="http://accredited-vaults.s3-website-us-west-2.amazonaws.com/#/avax" style={{padding:"0"}} >
+           <H to="home" spy={true}  smooth={true}  >Asset Structuring</H> 
         </a>
         <a style={{padding:"0"}}  >
-          <H to="learn" spy={true} smooth={true} >Earn</H>
+          <H to="learn" spy={true} smooth={true} >Transfer Agent</H>
         </a>
         <a style={{padding:"0"}}  >
-          <H to="rarity" spy={true} smooth={true} >Donate</H>
+          <H to="rarity" spy={true} smooth={true} >Real Estate Tokenization</H>
         </a>
         <a style={{padding:"0"}}  >
-         <H to="faq" spy={true} smooth={true} >Fundraise for</H> 
+         <H to="faq" spy={true} smooth={true} >HNI’s & Family Offices</H> 
         </a>
-        <a style={{padding:"0"}}  >
+        {/* <a style={{padding:"0"}}  >
          <H to="roadmap" spy={true} smooth={true} >Docs</H> 
         </a>
         <a style={{padding:"0"}}  >
          <H to="roadmap" spy={true} smooth={true} >How it Works</H> 
-        </a>
+        </a> */}
       </MenuItems>
 
       <Right>
@@ -95,7 +95,7 @@ const Menu = ({ open, ...props }) => {
           <Img src={twitter} alt="" />
           <Img src={opensea} alt="" />
         </Flex> */}
-        <T>Donor All Right Reserved.</T>
+        <T>2022 @ All Right Reserved.</T>
       </Right>
 
     </StyledMenu>

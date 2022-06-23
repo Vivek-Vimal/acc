@@ -63,7 +63,7 @@ const Left = styled(motion.div)`
         // background-size: 100% 100%;
         // background-repeat: no-repeat;
         border-radius: 1rem;
-        
+        display: block;
         // @media only screen and (max-width: 1700px) {
         //     height: 35rem;
         //   }
@@ -71,19 +71,9 @@ const Left = styled(motion.div)`
           @media only screen and (max-width: 1100px) {
             width: 30rem;
             height: 30rem;
-            
+            display: none;
         }
-        @media only screen and (max-width: 998px) {
-          width: 20rem;
-          height: 20rem;
-        }
-
-    // @media only screen and (max-width: 768px) {
      
-    //     width: 85%;
-    //     height: 25rem;
-       
-    //   }
 `;
 
 const Right = styled.div`

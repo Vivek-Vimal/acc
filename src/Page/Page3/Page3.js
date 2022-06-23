@@ -45,14 +45,18 @@ const Div = styled.div`
     align-items: center;
     justify-content: space-between;
      
-    @media only screen and (max-width: 1100px) {
-
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+        justify-content: center;
     }
 `;
 
 
 const HeadingContainer = styled.div`
- 
+    
+@media only screen and (max-width: 768px) {
+    margin: 0 0 0 1rem;
+}
 `
 
 const Heading = styled.div`
@@ -65,7 +69,7 @@ const Heading = styled.div`
     @media only screen and (max-width: 768px) {
         font-weight: 510;
         font-size: 1.2rem;
-       
+        text-align: left;
       }
 `;
 
@@ -80,6 +84,7 @@ color: #000000;
         font-weight: 510;
         font-size: 1.2rem;
         font-weight: bold;
+        text-align: left !important;
       }
 `;
 
@@ -123,7 +128,7 @@ const Left = styled(motion.div)`
 
     @media only screen and (max-width: 768px) {
      
-        width: 85%;
+        width: 95%;
       
        
       }
@@ -149,6 +154,7 @@ const Right = styled(motion.div)`
 
       @media only screen and (max-width: 768px) {
         width: 25rem; 
+        margin: 8rem 0 0 0;
         
       }
 
@@ -189,6 +195,10 @@ const Background = styled.div`
   align-items: center;
   justify-content: center;
   margin: 8rem 0 0 0;
+  @media only screen and (max-width: 768px) {
+    width: 100%; 
+    height: 20rem;
+  }
 `
 const Center = styled.div`
     
@@ -197,6 +207,7 @@ const Center = styled.div`
       position: absolute;
      @media only screen and (max-width: 768px) {
       width: 98%;
+      height: 28rem;
       flex-direction: column;
     }
 `

@@ -10,7 +10,7 @@ export const StyledMenu = styled.nav`
   width:100%;
   text-align: center;
   align-items: center;
-  padding: 2rem;
+  padding: 5rem 2rem 2rem 2rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -19,9 +19,9 @@ export const StyledMenu = styled.nav`
   margin: 0;
   a {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #FFF; 
+    font-size: 1rem;
+    font-weight: normal;
+    color: #000; 
     text-decoration: none;
     transition: color 0.3s linear;
     margin: 1rem 0;
